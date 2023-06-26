@@ -1,0 +1,13 @@
+Lord Picker
+Spring boot and Angular web app for randomly choosing a Lord from the video game TWWH3.
+
+Primary features:
+User can click a button and a random LL will be picked for them to play as next.
+Can filter in/out certain factions and/or lords.
+Each faction/lord has strengths attached to them (good ranged, good cav etc). Can also filter on this.
+
+Secondary features:
+Other filters: Games and campaigns, DLC. (future)
+Nice UI presenting the factions/lord with crests/portraits.
+UI idea: dont have grid of faction icons. have just a button to random, waiting/countdown thing when pressed, then the lord portrait and info on top of a faction themed background.
+Also have the filter menu pop in when clicked on. Use similar layout on this to Beddalla layout.
