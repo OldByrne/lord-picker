@@ -3,4 +3,6 @@ Spring boot
 Angular
 MySQL
 
+MySQL DB on port 3306
+
 
