@@ -1,10 +1,10 @@
 package com.davidayresbyrne.lordpickerbackend.model;
 
 import jakarta.persistence.*;
-
 import java.io.Serializable;
 
 @Entity
+@Table(name = "lord")
 public class Lord implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

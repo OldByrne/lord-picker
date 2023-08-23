@@ -26,4 +26,3 @@ public class LordService {
                 .orElseThrow(() -> new UserNotFoundException("Lord " + id + " not found."));
     }
 }
-

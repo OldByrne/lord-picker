@@ -1,36 +1,38 @@
 package com.davidayresbyrne.lordpickerbackend.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import java.io.Serializable;
 
-public class Faction {
-
+@Entity
+@Table(name = "faction")
+public class Faction implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, updatable = false)
-    private long factionId;
+    @Column(name = "faction_id", nullable = false, updatable = false)
+    private int id;
+    @Column(name="name")
     private String name;
+    @Column(name="image_url")
     private String imageUrl;
+    @Column(name="strength")
     private String strength;
 
-    public Faction() {
-    }
+//    public Faction() {
+//    }
 
-    public Faction(long factionId, String name, String imageUrl, String strength) {
-        this.factionId = factionId;
+    public Faction(int id, String name, String imageUrl, String strength) {
+        this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
         this.strength = strength;
     }
 
     public long getFactionId() {
-        return factionId;
+        return id;
     }
 
-    public void setFactionId(long factionId) {
-        this.factionId = factionId;
+    public void setFactionId(int factionId) {
+        this.id = factionId;
     }
 
     public String getName() {
